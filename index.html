@@ -10,9 +10,39 @@
 <body>
     <div id="title">
         <h1>Caleb and Emilio Survey Form</h1>
-        <p id="description"> Thank you for taking your time to give us feedback to improve our coding skills</p>
-        <section>
+
+        <section id="container">
+          <p id="description"> Thank you for taking your time to give us feedback to improve our coding skills</p>
             <form id="survey-form">
+              <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+              <label id="email-label">Name <input id="email" type="text" required placeholder="Enter your email"></label>
+              <label id="age-label">Name <input id="number" type="text" required placeholder="Age"></label>
+              <label>Which option best describes your current role? <select id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Student">Full time job</option>
+                <option value="Student">Full time learner</option>
+                <option value="Student">Prefer not to say</option>
+                <option value="Student">Other</option>
+              </select>
+              </label>
+              <div>
+                Would you recommend freeCodeCamp to a friend?
+                <label>
+                  <input type="radio" name="Definitetly">
+                  Definitetly
+                </label>
+                <label>
+                  <input type="radio" name="Maybe">
+                  Maybe
+                </label>
+                <label>
+                  <input type="radio" name="Not Sure">
+                  Not Sure
+                </label>
+              </div>
+
+
+
 
             </form>
         </section>
