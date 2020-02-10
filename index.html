@@ -10,14 +10,15 @@
 <body>
     <div id="title">
         <h1>Caleb and Emilio Survey Form</h1>
+        <p id="description"> Thank you for taking your time to give us feedback to improve our coding skills</p>
 
-        <section id="container">
-          <p id="description"> Thank you for taking your time to give us feedback to improve our coding skills</p>
+        <div id="container">
+
             <form id="survey-form">
-              <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
-              <label id="email-label">Name <input id="email" type="text" required placeholder="Enter your email"></label>
-              <label id="age-label">Name <input id="number" type="text" required placeholder="Age"></label>
-              <label>Which option best describes your current role? <select id="dropdown">
+                <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+                <label id="email-label">Email <input id="email" type="text" required placeholder="Enter your email"></label>
+                <label id="age-label">Age <input id="number" type="text" required placeholder="Age"></label>
+                <label>Which option best describes your current role? <select id="dropdown">
                 <option value="Student">Student</option>
                 <option value="Student">Full time job</option>
                 <option value="Student">Full time learner</option>
@@ -25,27 +26,68 @@
                 <option value="Student">Other</option>
               </select>
               </label>
-              <div>
-                Would you recommend freeCodeCamp to a friend?
-                <label>
+                <div id="container-radios">
+                    Would you recommend freeCodeCamp to a friend?
+                    <label>
                   <input type="radio" name="Definitetly">
                   Definitetly
                 </label>
-                <label>
+                    <label>
                   <input type="radio" name="Maybe">
                   Maybe
                 </label>
-                <label>
+                    <label>
                   <input type="radio" name="Not Sure">
                   Not Sure
                 </label>
-              </div>
+
+                </div>
+
+                <label>What is your favourite feature of freecodecamp? <select id="dropdown">
+                  <option value="Challenges">challenges</option>
+                  <option value="Projects">projects</option>
+                  <option value="Community">community</option>
+                  <option value="Open">open source</option>
+                  </select>
+                 
+                  <div id="container-checks">
+                    What would you like to see improved?
+                    <label><input type="checkbox" name="frontend projects">
+                      Frontend Projects
+                    </label>
+
+                <label>
+                      <input type="checkbox" name="data visualization" >
+                      Data Visualization
+                    </label>
+                <label>
+                      <input type="checkbox" name="challenges" >
+                    Challenges
+                   </label>
+                <label><input type="checkbox" name="open source community"> Open Source Community</label>
+
+                <label><input type="checkbox" name="gitter help rooms"> Gitter Help Rooms</label>
+                <label> <input type="checkbox" name="videos"> Videos</label>
+
+                <label><input type="checkbox" name="city"> City</label>
+                <label><input type="checkbox" name="Wiki"> Wiki</label>
+                <label><input type="checkbox" name="forum"> Forum</label>
+                <label> <input type="checkbox" name="additional courses"> Additional Courses</label>
+
+        </div>
+
+        <label id="textarea-label">Any comments or suggestions? <input id="text-area" type="textarea" required placeholder="Enter your comments here.."></label>
+
+        </label>
+        <button id="submit">Submit</button>
 
 
 
 
-            </form>
-        </section>
+
+
+        </form>
+    </div>
     </div>
 
 </body>
